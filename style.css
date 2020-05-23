@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ 
+    font-family:Circular, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color:white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    background-image: linear-gradient(
+        115deg,
+        rgba(66, 223, 92, 0.74),
+        rgba(52, 52, 231, 0.555)
+      ),
+      url('https://wallpapercave.com/wp/wp2201813.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index:10;
+    min-height:85%;
+    background-image: linear-gradient(
+        193deg,
+        rgba(41, 228, 34, 0.74),
+        rgba(13, 13, 99, 0.555)
+      ),
+      url('https://bit.ly/2LQODZO');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-info{
+    font-size: 2rem;
+    color: #FD440F;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.863);
+    padding:5rem;
+}
+.img-info p{
+    width: 100%;
+    text-align: center;
+    top:0;
+    opacity: .6;
+    font-size: 5rem;
+    font-family: 'Creepster', cursive;
+}
+#wknd-img{
+    margin-top:.8rem;
+    margin: auto;
+}
+.logo{
+    margin:.4rem;
+    padding:.4rem;
+    display: flex;
+    align-items: center;
+    z-index:1;
+    /* width:50%; */
+}
+.logo-info{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: .3rem;
+}
+
+.logo-img{
+    width:50px;
+    cursor: pointer;
+}
+.logo-img:hover{
+    color:rgb(250, 123, 144);
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: .3rem;
+    z-index:1;
+}
+.menu-toggle{
+    display: none;
+}
+.nav-list{
+    margin:.4rem;
+    padding:.4rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+#vert{
+    display:none;
+}
+li{
+    display: inline-block;
+    margin: .5rem;
+    padding: .5rem;
+    cursor: default;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color:#1ED760;
+}
+
+#spotifyVid{
+  width: 100%;
+}
+
+iframe{
+    width: 100%;
+    height:100%;
+    max-height: 100%;
+}
+
+.offer{
+    color: white;
+    padding: 1.2rem;
+    line-height: 7rem;
+    max-height: 100%;
+    margin-left: .6rem;
+}
+.offer-info{
+    font-size: 5rem;
+    font-weight: 900;
+    opacity: .9;
+    text-align: center;
+}
+.hglt-r{
+    color:rgb(255, 122, 144);
+}
+.hglt-g{
+    color:#1ED760;
+}
+
+/*header ends*/
+
+
+.hero{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.info{
+    text-align: center;
+    padding: 1rem;
+    margin:1rem;
+}
+#title{
+    font-size: 3rem;
+}
+.info p{
+    padding:1rem;
+    font-size: 1.2rem;
+}
+.plan{
+    border-collapse: collapse;
+    width: 70%;
+    margin: 1rem;
+}
+
+
+td,th{
+    padding:1rem;
+    text-align: center;
+    border-bottom: 1.2px solid gray;
+}
+
+.fa-check{
+    color:#1ED760;
+}
+
+.fa-times{
+    color: rgb(255, 122, 144);
+}
+
+form{
+    width: 100%;
+    margin:1rem;
+    padding:.5rem;
+}
+form > input{
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius:.5rem;
+    outline: none;
+    font-size: 1rem;
+}
+input[type='submit']{
+    width: 20%;
+    padding:.6rem;
+    background-color: #1ED760;
+    border: none;
+    outline:none;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(255, 122, 144);
+    color: black;
+    transition: .5s;
+}
+
+/*media query for tablets*/
+@media (max-width:768px){
+
+    .menu-toggle{
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    
+    /* to ensure the element is in center  */
+    top:50%;
+    transform: translateY(-50%);
+    
+    right: 2.5rem;
+    cursor: pointer;
+  
+    /*make sure it remian top of everything */
+    z-index: 1500; 
+        display: block;
+    }
+    .exit{
+        display: none;
+    }
+    .nav-list{
+    padding:2rem;
+    list-style: none;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1250;
+    transform: translateX(-100%); 
+    transition: transform .5s;
+
+    }
+    #hrzt{
+        display: none;
+    }
+    #vert{
+        display:block;
+    }
+    .nav{
+        padding:0;
+        
+    }
+    .nav::before{
+        content: ''; /* is necessary*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 1000; /* ensure to stay infornt of the content excpet the navlist and menulist */
+        opacity: 0;  /*temporary hides the mask, will unhide this using js*/
+    
+        /*even though we can't see the mask, it is their, to hide it completely we scale it to 0*/
+        transform: scale(0);
+        transition: opacity .5s; 
+    }
+
+    .open .exit{
+        display: block;
+        position: sticky;
+        top:1;
+
+    }
+    
+    .open .fa-bars{
+        display: none;
+    }
+    
+    .open .nav-list{
+        transform: translateX(0); /*previously: translate(-100)*/
+    }
+    
+    .open .nav::before{
+        opacity: 1;
+        transform: scale(1);  /*previously: opacity: 0, scale(0);*/
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+    }
+
+    #spotifyVid{
+        height: 60%;
+      }
+    
+}
+
+
+@media(max-width:630px){
+    header{
+        min-height:65%;
+    }
+    .offer{
+        padding: 1.2rem;
+        line-height: 4.5rem;
+        max-height: 100%;
+        margin-top:4rem;
+    }
+    .offer-info{
+        font-size: 3rem;
+        font-weight: 900;
+        opacity: .9;
+        text-align: center;
+    }
+    #spotifyVid{
+        height: 40%;
+      }
+
+    .menu-toggle{
+        font-size: 1.7rem;
+    }
+
+    .img-info{
+        padding:2rem;
+    }
+    .img-info p{
+        font-size: 3rem;
+    }
+
+    
+.info{
+    text-align: center;
+    padding: .6rem;
+    margin:.6rem;
+
+}
+
+    #title{
+        font-size: 2rem;
+    }
+
+    .plan{
+        width: 80%;
+        margin: .5rem;
+    }
+
+    td,th{
+        padding:.71rem;
+    }
+    
+    form{
+        width: 100%;
+        margin:.5rem;
+        padding:.2rem;
+    }
+    form > input{
+        width: 70%;
+        margin: .8rem auto;
+        padding: .8rem;
+    }
+    input[type='submit']{
+        width: 30%;
+        padding:.6rem;
+    }
+}
+
+@media(max-width:380px){
+    header{
+        min-height:50%;
+    }
+    .offer{
+        padding: 1.2rem;
+        line-height: 4rem;
+        max-height: 100%;
+        margin-top:4rem;
+    }
+    .offer-info{
+        font-size: 2.7rem;
+        font-weight: 900;
+        opacity: .9;
+        text-align: center;
+    }
+
+    .menu-toggle{
+        font-size: 1.5rem;
+    }
+
+    .img-info{
+        padding:1rem;
+    }
+    .img-info p{
+        font-size: 2.7rem;
+    }
+
+    
+.info{
+    text-align: center;
+    padding: .6rem;
+    margin:.6rem;
+
+}
+
+    #title{
+        font-size: 2rem;
+    }
+
+    .plan{
+        width: 85%;
+    }
+
+    td,th{
+        padding:.5rem;
+    }
+    
+    form > input{
+        width: 75%;
+        margin: .7rem auto;
+        padding: .7rem;
+    }
+    input[type='submit']{
+        width: 35%;
+        padding:.6rem;
+    }
+    .logo-info{
+        font-size: 1.3rem;
+    }
+    
+    .logo-img{
+        width:35px;
+    }
+    
+}

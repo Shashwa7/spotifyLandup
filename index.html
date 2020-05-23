@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Product-landup</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+    
+
+            <nav id="nav-bar" class='nav'>
+                <div class="menu-toggle">
+                    <!-- hamburger menu and x  from font awesome cdn classes-->
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times exit"></i>
+                </div>
+
+            <div class="logo">
+                <span class='logo-img'>
+                    <img src="https://bit.ly/3ebu1az" alt="" id="header-img">
+                </span>
+                <span class="logo-info">Spotify</span>  
+                
+            </div>
+              
+            <ul id="links" class="nav-list">
+                <li><a class="nav-link" href="#form">Premium</a></li>
+                <li><a class="nav-link" href="https://bit.ly/3gaTUZT" target="_blank">Help</a></li>
+                <li><a class="nav-link" href="https://www.spotify.com/in/download/windows/" target="_blank">Download</a></li>
+                <li id='hrzt'>|</li> 
+                <li id="vert">__</li>
+                <li><a class="nav-link" href="https://bit.ly/2LVZTnn" target="_blank">Sign-In</a></li>
+                <li><a class="nav-link" href="https://www.spotify.com/in/signup/" target="_blank">Sign-Up</a></li>
+            </ul>
+            </nav>
+            <div class="offer">
+                   <p class='offer-info'>
+                     Get <span class="hglt-r">12 months</span></p>
+                  <p class='offer-info'>
+                    of
+                    <span class="hglt-g">Premium</span>
+                  </p>
+                  <p class='offer-info'>
+                    for <strike>₹1189</strike> <span class="hglt-r">₹699</span>
+                  </p>
+            </div>
+        </header>
+        
+        <section id="spotifyVid">
+            <iframe id ="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aCAmRZ9Kozo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="img-info">
+            <p>Now Streaming</p>
+            <img src="https://go.aws/3ebp9lN" alt="" id="wknd-img">
+        </section>
+        
+
+        <section class="hero">
+            <div class="info"> <h1 id='title'>Compare Plans</h1>
+            <p>
+                All our plans let you build and share playlists, listen to millions of songs and podcasts, and suggest new music based on your taste.</div>
+            </p>
+           <table class="plan">
+               <tr>
+                   <th></th>
+                   <th>Free</th>
+                   <th class="hglt-g">Premium</th>
+               </tr>
+               <tr>
+                   <td>Skip any song</td>
+                   <td>6/hour</td>
+                   <td>Unlimited</td>
+               </tr>
+               <tr>
+                <td>Play on shuffle</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+               </tr>
+               <tr>
+                <td>Ad-free music</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+               </tr>
+               <tr>
+                <td>Choose song order</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+               </tr>
+               <tr>
+                <td>Audio quality</td>
+                <td>160kbps</td>
+                <td>320kbps</td>
+               </tr>
+               <td>Play offline</td>
+               <td><i class="fas fa-times"></i></td>
+               <td><i class="fas fa-check"></i></td>
+              </tr>
+               
+           </table>
+
+           
+          <form id="form">
+         <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Go Premium" class="btn"  />
+        </form>
+        </section>
+
+    </div>
+        <script src="app.js"></script>
+</body>
+</html>
